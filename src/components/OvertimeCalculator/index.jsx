@@ -28,7 +28,8 @@ export default function CalculadoraHorasExtras() {
     }
 
     const salarioNum = parseFloat(salarioHoras);
-    const valorHoraOrdinaria = salarioNum / 240;
+    // CAMBIO: Se ajusta de 240 a 220 horas mensuales (44h semanales)
+    const valorHoraOrdinaria = salarioNum / 220;
 
     const diurnas = parseFloat(horasDiurnas || 0) * valorHoraOrdinaria * 1.25;
     const nocturnas = parseFloat(horasNocturnas || 0) * valorHoraOrdinaria * 1.75;
@@ -104,7 +105,7 @@ export default function CalculadoraHorasExtras() {
               Información de horas trabajadas
             </h3>
             <p className="font-sans text-sm text-gray-500">
-              Recargos según normativa colombiana
+              Recargos según normativa Colombiana
             </p>
           </div>
         </div>
@@ -143,7 +144,8 @@ export default function CalculadoraHorasExtras() {
                 placeholder="Cantidad de horas"
                 className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
               />
-              <p className="font-sans text-xs text-gray-500 mt-2">6:00 AM - 9:00 PM</p>
+              {/* CAMBIO: Texto informativo a 7:00 PM */}
+              <p className="font-sans text-xs text-gray-500 mt-2">6:00 AM - 7:00 PM</p>
             </div>
 
             <div className="group">
@@ -160,7 +162,8 @@ export default function CalculadoraHorasExtras() {
                 placeholder="Cantidad de horas"
                 className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
               />
-              <p className="font-sans text-xs text-gray-500 mt-2">9:00 PM - 6:00 AM</p>
+              {/* CAMBIO: Texto informativo a 7:00 PM */}
+              <p className="font-sans text-xs text-gray-500 mt-2">7:00 PM - 6:00 AM</p>
             </div>
 
           </div>
@@ -181,7 +184,8 @@ export default function CalculadoraHorasExtras() {
                 placeholder="Cantidad de horas"
                 className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
               />
-              <p className="font-sans text-xs text-gray-500 mt-2">Domingos y festivos 6:00 AM - 9:00 PM</p>
+              {/* CAMBIO: Texto informativo a 7:00 PM */}
+              <p className="font-sans text-xs text-gray-500 mt-2">Domingos y festivos 6:00 AM - 7:00 PM</p>
             </div>
 
             <div className="group">
@@ -198,14 +202,16 @@ export default function CalculadoraHorasExtras() {
                 placeholder="Cantidad de horas"
                 className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
               />
-              <p className="font-sans text-xs text-gray-500 mt-2">Domingos y festivos 9:00 PM - 6:00 AM</p>
+              {/* CAMBIO: Texto informativo a 7:00 PM */}
+              <p className="font-sans text-xs text-gray-500 mt-2">Domingos y festivos 7:00 PM - 6:00 AM</p>
             </div>
 
           </div>
 
           <div className="p-4 bg-blue-50 rounded-xl border border-blue-200">
             <p className="font-sans text-sm text-blue-800">
-              <strong>Nota:</strong> Los recargos se calculan sobre el valor de la hora ordinaria (salario mensual ÷ 240 horas).
+              {/* CAMBIO: Texto de nota actualizado a 220 */}
+              <strong>Nota:</strong> Los recargos se calculan sobre el valor de la hora ordinaria (salario mensual ÷ 220 horas).
             </p>
           </div>
 
@@ -349,7 +355,7 @@ export default function CalculadoraHorasExtras() {
                     {formatCurrency(resultadosHoras.total)}
                   </h3>
                   <p className="font-sans text-white/60 text-sm">
-                    Cálculo basado en normativa colombiana vigente
+                    Cálculo basado en 220 horas mensuales
                   </p>
                 </div>
                 
@@ -366,9 +372,10 @@ export default function CalculadoraHorasExtras() {
 
             <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-200">
               <p className="font-sans text-sm text-blue-800">
+                {/* CAMBIO: Etiquetas de horario nocturno actualizadas a 7:00 PM */}
                 <strong>Nota:</strong> Los recargos se aplican así:
-                <br/>• Horas extras diurnas (6:00 AM - 9:00 PM): +25%
-                <br/>• Horas extras nocturnas (9:00 PM - 6:00 AM): +75%
+                <br/>• Horas extras diurnas (6:00 AM - 7:00 PM): +25%
+                <br/>• Horas extras nocturnas (7:00 PM - 6:00 AM): +75%
                 <br/>• Dominicales/festivos diurnas: +100%
                 <br/>• Dominicales/festivos nocturnas: +150%
               </p>

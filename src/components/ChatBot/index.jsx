@@ -35,7 +35,7 @@ const knowledgeBase = {
     servicios_general: {
         keywords: ['servicios', 'que ofrecen', 'lista de servicios', 'todos los servicios', 'catalogo', 'ver servicios', 'ver todos los servicios', 'ver los 6 servicios'],
         response: '📋 **Nuestros 6 Servicios Profesionales:**\n\n1️⃣ **Asesoría Contable**\n   Gestión integral de contabilidad\n\n2️⃣ **Asesoría Fiscal**\n   Optimización tributaria y fiscal\n\n3️⃣ **Asesoría Financiera**\n   Análisis y planeación financiera\n\n4️⃣ **Revisoría Fiscal**\n   Auditoría y certificación\n\n5️⃣ **Capacitación Empresarial**\n   Formación especializada\n\n6️⃣ **Trámites ante Entidades**\n   Gestión con organismos de control\n\n¿Sobre cuál servicio quieres información detallada?',
-        quickReplies: ['Asesoría Contable', 'Asesoría Fiscal', 'Asesoría Financiera', 'Revisoría Fiscal', 'Capacitación Empresarial', 'Trámites ante Entidades'] // Incluyo todos los servicios
+        quickReplies: ['Asesoría Contable', 'Asesoría Fiscal', 'Asesoría Financiera', 'Revisoría Fiscal', 'Capacitación Empresarial', 'Trámites ante Entidades'] 
     },
 
     // SERVICIO 1 - ASESORÍA CONTABLE (COMPLETO)
@@ -100,7 +100,7 @@ const knowledgeBase = {
 
     contacto: {
         keywords: ['contacto', 'teléfono', 'telefono', 'email', 'correo', 'dirección', 'direccion', 'ubicación', 'ubicacion', 'contactar', 'contactar asesor'],
-        response: '📞 **INFORMACIÓN DE CONTACTO**\n\n💬 **WhatsApp:** [Tu número]\n📧 **Email:** info@actributaria.com\n📍 **Ubicación:** Barbosa, Antioquia, Colombia\n\n⏰ **Horario de atención:**\nLunes a Viernes: 8:00 AM - 6:00 PM\nSábados: 9:00 AM - 1:00 PM\n\n**TIEMPO DE RESPUESTA:**\n✅ WhatsApp: Inmediato\n✅ Email: Menos de 24 horas\n✅ Llamadas: En horario laboral\n\n¿Por dónde prefieres contactarnos?',
+        response: '📞 **INFORMACIÓN DE CONTACTO**\n\n💬 **WhatsApp:** 3146623630\n📧 **Email:** admon@actributaria.com\n📍 **Ubicación:** Cali, Valle del Cauca, Colombia\n\n⏰ **Horario de atención:**\nLunes a Viernes: 8:00 AM - 6:00 PM\nSábados: 9:00 AM - 1:00 PM\n\n**TIEMPO DE RESPUESTA:**\n✅ WhatsApp: Inmediato\n✅ Email: Menos de 24 horas\n✅ Llamadas: En horario laboral\n\n¿Por dónde prefieres contactarnos?',
         quickReplies: ['💬 WhatsApp ahora', '📅 Agendar cita', 'Ver servicios']
     },
 
@@ -139,7 +139,7 @@ const createQuickReplyMap = (kb) => {
                 map[reply.toLowerCase().trim()] = key;
             });
         }
-    }
+    } 
     // Añadir las claves de servicios/temas que pueden ser Quick Replies en otros contextos
     map['asesoría contable'] = 'asesoria_contable';
     map['asesoría fiscal'] = 'asesoria_fiscal';
@@ -379,7 +379,7 @@ const ChatBot = () => {
                     className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 group"
                     aria-label="Abrir chat"
                 >
-                    <div className="relative">
+                    <div className="relative cursor-pointer">
                         <div className="absolute inset-0 bg-[#1c9d9f] rounded-full ping-delay opacity-75"></div>
 
                         <div className="relative w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-[#1c9d9f] to-[#168788] rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform duration-300">
@@ -405,7 +405,7 @@ const ChatBot = () => {
                     className="
                         fixed z-50 flex flex-col overflow-hidden bg-white border border-gray-200 shadow-2xl
                         inset-0 rounded-none
-                        md:inset-auto md:bottom-6 md:right-6 md:w-[400px] md:h-[650px] md:rounded-2xl
+                        md:inset-auto md:bottom-6 md:right-6 md:w-[400px] md:h-[500px] 2xl:h-[650px] md:rounded-2xl
                     "
                 >
                     {/* HEADER */}
@@ -425,7 +425,7 @@ const ChatBot = () => {
 
                         <button
                             onClick={() => setIsOpen(false)}
-                            className="text-white hover:bg-white/20 p-2 rounded-full transition-colors"
+                            className="text-white hover:bg-white/20 p-2 rounded-full transition-colors cursor-pointer"
                             aria-label="Cerrar chat"
                         >
                             <HiXMark className="w-6 h-6" />
@@ -507,14 +507,14 @@ const ChatBot = () => {
                     <div className="px-4 py-2 bg-white border-t border-gray-200 flex gap-2">
                         <button
                             onClick={handleWhatsAppRedirect}
-                            className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-green-500 text-white text-xs font-semibold rounded-lg hover:bg-green-600 transition"
+                            className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-green-500 text-white text-xs font-semibold rounded-lg hover:bg-green-600 transition cursor-pointer"
                         >
                             <FaWhatsapp className="w-4 h-4" />
                             WhatsApp
                         </button>
                         <button
                             onClick={handleAgendarClick}
-                            className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-[#1c9d9f] text-white text-xs font-semibold rounded-lg hover:bg-[#168788] transition"
+                            className="flex-1 flex items-center justify-center gap-2 px-3 py-2 bg-[#1c9d9f] text-white text-xs font-semibold rounded-lg hover:bg-[#168788] transition cursor-pointer"
                         >
                             <HiOutlineCalendar className="w-4 h-4" />
                             Agendar

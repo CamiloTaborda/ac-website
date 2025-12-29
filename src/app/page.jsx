@@ -489,7 +489,7 @@ export default function Home() {
         >
           <span className="relative z-10 flex items-center gap-3">
             Conversemos por WhatsApp
-            <HiOutlineChatBubbleLeftRight className="text-xl" />
+            <HiOutlineChatBubbleLeftRight className="w-6 h-6" />
           </span>
           {/* Efecto de brillo */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-700"></div>
