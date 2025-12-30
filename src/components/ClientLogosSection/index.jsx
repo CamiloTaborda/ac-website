@@ -10,7 +10,7 @@ export default function ClientLogosSection() {
     '/logos/logo-2.png',
     '/logos/logo-3.png',
     '/logos/logo-4.png',
-    '/logos/logo-5.png',
+    // '/logos/logo-5.png',
     '/logos/logo-6.png',
     '/logos/logo-7.png',
     '/logos/logo-8.png',
