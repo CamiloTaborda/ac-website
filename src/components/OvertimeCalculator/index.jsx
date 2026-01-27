@@ -124,7 +124,7 @@ export default function CalculadoraHorasExtras() {
               value={salarioHoras}
               onChange={(e) => setSalarioHoras(e.target.value)}
               placeholder="Ejemplo: 1500000"
-              className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+              className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
             />
           </div>
 
@@ -142,7 +142,7 @@ export default function CalculadoraHorasExtras() {
                 value={horasDiurnas}
                 onChange={(e) => setHorasDiurnas(e.target.value)}
                 placeholder="Cantidad de horas"
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
               />
               {/* CAMBIO: Texto informativo a 7:00 PM */}
               <p className="font-sans text-xs text-gray-500 mt-2">6:00 AM - 7:00 PM</p>
@@ -160,7 +160,7 @@ export default function CalculadoraHorasExtras() {
                 value={horasNocturnas}
                 onChange={(e) => setHorasNocturnas(e.target.value)}
                 placeholder="Cantidad de horas"
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
               />
               {/* CAMBIO: Texto informativo a 7:00 PM */}
               <p className="font-sans text-xs text-gray-500 mt-2">7:00 PM - 6:00 AM</p>
@@ -182,7 +182,7 @@ export default function CalculadoraHorasExtras() {
                 value={horasDominicalesDiurnas}
                 onChange={(e) => setHorasDominicalesDiurnas(e.target.value)}
                 placeholder="Cantidad de horas"
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
               />
               {/* CAMBIO: Texto informativo a 7:00 PM */}
               <p className="font-sans text-xs text-gray-500 mt-2">Domingos y festivos 6:00 AM - 7:00 PM</p>
@@ -200,7 +200,7 @@ export default function CalculadoraHorasExtras() {
                 value={horasDominicalesNocturnas}
                 onChange={(e) => setHorasDominicalesNocturnas(e.target.value)}
                 placeholder="Cantidad de horas"
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
               />
               {/* CAMBIO: Texto informativo a 7:00 PM */}
               <p className="font-sans text-xs text-gray-500 mt-2">Domingos y festivos 7:00 PM - 6:00 AM</p>

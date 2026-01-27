@@ -195,7 +195,7 @@ export default function CalculadoraLiquidacion() {
               value={salario}
               onChange={(e) => setSalario(e.target.value)}
               placeholder="Ejemplo: 1500000"
-              className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+              className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
             />
             <p className="font-sans text-xs text-gray-500 mt-2 italic">
               * Salario base ordinario, sin incluir horas extras ni bonificaciones variables
@@ -215,7 +215,7 @@ export default function CalculadoraLiquidacion() {
                 type="date"
                 value={fechaIngreso}
                 onChange={(e) => setFechaIngreso(e.target.value)}
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
               />
             </div>
 
@@ -230,7 +230,7 @@ export default function CalculadoraLiquidacion() {
                 type="date"
                 value={fechaRetiro}
                 onChange={(e) => setFechaRetiro(e.target.value)}
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 text-[#2d2d38]"
               />
             </div>
 
@@ -248,7 +248,7 @@ export default function CalculadoraLiquidacion() {
               <select
                 value={tipoContrato}
                 onChange={(e) => setTipoContrato(e.target.value)}
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 bg-white"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 bg-white text-[#2d2d38]"
               >
                 <option value="indefinido">Término indefinido</option>
                 <option value="fijo">Término fijo</option>
@@ -266,7 +266,7 @@ export default function CalculadoraLiquidacion() {
               <select
                 value={causaRetiro}
                 onChange={(e) => setCausaRetiro(e.target.value)}
-                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 bg-white"
+                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl font-sans text-lg focus:border-[#1c9d9f] focus:outline-none transition-all hover:border-gray-300 bg-white text-[#2d2d38]"
               >
                 <option value="renuncia">Renuncia voluntaria</option>
                 <option value="despido">Despido sin justa causa</option>

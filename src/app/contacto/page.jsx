@@ -9,7 +9,7 @@ import {
   HiOutlineMapPin,
   HiOutlinePaperAirplane,
   HiOutlineChatBubbleLeftRight,
-  HiOutlineCheckCircle // Icono para el mensaje de éxito
+  HiOutlineCheckCircle 
 } from "react-icons/hi2";
 import useSmoothScroll from 'app/hooks/useSmoothScroll';
 import { TitleAnimation } from 'app/components/Animations/TitleAnimation';
@@ -157,7 +157,7 @@ export default function Contacto() {
                       required
                       value={formData.nombre}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat text-[#2d2d38]"
                       placeholder="Tu nombre"
                     />
                   </div>
@@ -170,7 +170,7 @@ export default function Contacto() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat text-[#2d2d38]"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -182,7 +182,7 @@ export default function Contacto() {
                       name="telefono"
                       value={formData.telefono}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat text-[#2d2d38]"
                       placeholder="+57"
                     />
                   </div>
@@ -195,7 +195,7 @@ export default function Contacto() {
                       value={formData.mensaje}
                       onChange={handleChange}
                       rows={5}
-                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat resize-none"
+                      className="w-full px-4 py-3 rounded-xl border-2 border-[#e5e7eb] focus:border-[#1c9d9f] focus:outline-none transition-colors duration-300 font-montserrat resize-none text-[#2d2d38]"
                       placeholder="¿Cómo podemos ayudarte?"
                     />
                   </div>

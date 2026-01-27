@@ -19,6 +19,7 @@ import CalculadoraHorasExtras from 'app/components/OvertimeCalculator';
 
 export default function CalculadoraPage() {
   const [pestanaActiva, setPestanaActiva] = useState('liquidacion');
+  const currentYear = new Date().getFullYear();
   useSmoothScroll();
 
   return (
@@ -46,14 +47,14 @@ export default function CalculadoraPage() {
           
           <TextAnimation>
             <p className="font-sans text-[#9a9faf] text-lg md:text-xl max-w-3xl leading-relaxed mb-8 mt-6">
-              Herramientas precisas para calcular liquidaciones laborales y horas extras según la normativa colombiana vigente 2025.
+              Herramientas precisas para calcular liquidaciones laborales y horas extras según la normativa colombiana vigente {currentYear}.
             </p>
           </TextAnimation>
 
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-white/10 w-fit">
             <HiShieldCheck className="w-5 h-5 text-[#1c9d9f]" />
             <span className="font-sans text-[#9a9faf] text-sm">
-              100% Gratis • Normativa colombiana 2025
+              100% Gratis • Normativa colombiana {currentYear}
             </span>
           </div>
         </div>
