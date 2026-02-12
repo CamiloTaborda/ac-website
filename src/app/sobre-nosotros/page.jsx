@@ -227,7 +227,7 @@ export default function AboutUs() {
       </section>
 
       {/* SECCIÓN: EQUIPO */}
-      <section className="w-full bg-white py-20 md:py-32">
+      {/* <section className="w-full bg-white py-20 md:py-32">
         <div className="max-w-[1800px] mx-auto w-full px-6 sm:px-8 md:px-12">
           
           <div className="text-center mb-16">
@@ -250,7 +250,6 @@ export default function AboutUs() {
                 key={index}
                 className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
               >
-                {/* Foto completa */}
                 <div className="relative w-full h-100 2xl:h-120 overflow-hidden bg-[#f8f9fa]">
                 <Image
                 src={member.image} 
@@ -261,7 +260,6 @@ export default function AboutUs() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2d2d38]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                </div>
 
-                {/* Info debajo */}
                 <div className="p-8 text-center">
                   <h3 className="font-playfair text-2xl md:text-2xl font-bold text-[#2d2d38] mb-2">
                     {member.name}
@@ -279,7 +277,7 @@ export default function AboutUs() {
           </FadeInWhenVisible>
 
         </div>
-      </section>
+      </section> */}
 
       {/* CTA FINAL */}
       <section className="w-full bg-gradient-to-br from-[#2d2d38] via-[#2d2d38] to-[#1c9d9f]/40 py-20 md:py-24">
